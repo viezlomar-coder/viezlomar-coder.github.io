@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://scottsdalesprinters.com/sitemap.xml
