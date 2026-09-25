@@ -1,0 +1,202 @@
+[
+  {
+    "escape": "sedona-red-rocks",
+    "stop": "Cathedral Rock",
+    "path": "/media/partner/sedona-red-rocks/cathedral-rock.jpg",
+    "width": 2400,
+    "height": 1600,
+    "credit": "Coconino National Forest, U.S. Forest Service — public domain",
+    "licence": "Public domain — {{PD-USGov-USDA}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Cathedral_Rock_(25270326947).jpg"
+  },
+  {
+    "escape": "sedona-red-rocks",
+    "stop": "Chapel of the Holy Cross",
+    "path": "/media/partner/sedona-red-rocks/chapel-of-the-holy-cross.jpg",
+    "width": 2400,
+    "height": 1406,
+    "credit": "Photo by Bernard Spragg, NZ (CC0)",
+    "licence": "CC0 — {{cc-zero}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Chapel_of_the_Holy_Cross_(Sedona,_Arizona)_(30530128245).jpg"
+  },
+  {
+    "escape": "sedona-red-rocks",
+    "stop": "Tlaquepaque Arts & Shopping Village",
+    "path": "/media/partner/sedona-red-rocks/tlaquepaque.jpg",
+    "width": 1800,
+    "height": 1208,
+    "credit": "Photo by Jared (Flickr: jared422), CC BY 2.0",
+    "licence": "CC BY 2.0 — {{cc-by-2.0}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Sedona_-_Tlaquepaque_Arts_%26_Crafts_Village_-_Patio_De_Las_Campanas_(3)_(35747119955).jpg"
+  },
+  {
+    "escape": "sedona-red-rocks",
+    "stop": "West Fork of Oak Creek",
+    "path": "/media/partner/sedona-red-rocks/west-fork-of-oak-creek.jpg",
+    "width": 1800,
+    "height": 1200,
+    "credit": "Photo by Coconino National Forest (CC0)",
+    "licence": "CC0 — {{Cc-zero}}",
+    "source": "https://commons.wikimedia.org/wiki/File:West_Fork_of_Oak_Creek_Canyon_No._108_(30192637302).jpg"
+  },
+  {
+    "escape": "sedona-red-rocks",
+    "stop": "Slide Rock State Park",
+    "path": "/media/partner/sedona-red-rocks/slide-rock-state-park.jpg",
+    "width": 1800,
+    "height": 1198,
+    "credit": "Photo by mbaylor, CC BY 2.0",
+    "licence": "CC BY 2.0 — {{cc-by-2.0}}",
+    "source": "https://commons.wikimedia.org/wiki/File:2023_Slide_Rock_State_Park-0519.jpg"
+  },
+  {
+    "escape": "grand-canyon-south-rim",
+    "stop": "Mather Point and the Grand Canyon Visitor Center",
+    "path": "/media/partner/grand-canyon-south-rim/mather-point.jpg",
+    "width": 2400,
+    "height": 1042,
+    "credit": "NPS photo by Michael Quinn — public domain",
+    "licence": "Public domain — {{PD-USGov-NPS}} (also released CC BY 2.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:View_from_Mather_Point.jpg"
+  },
+  {
+    "escape": "grand-canyon-south-rim",
+    "stop": "Yavapai Point and the Yavapai Geology Museum",
+    "path": "/media/partner/grand-canyon-south-rim/yavapai-point.jpg",
+    "width": 2100,
+    "height": 1418,
+    "credit": "NPS photo by Michael Quinn — public domain",
+    "licence": "Public domain — {{PD-USGov-NPS}} (also released CC BY 2.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Yavapai_Geology_Museum.jpg"
+  },
+  {
+    "escape": "grand-canyon-south-rim",
+    "stop": "Grand Canyon Village and Bright Angel Lodge",
+    "path": "/media/partner/grand-canyon-south-rim/bright-angel-lodge.jpg",
+    "width": 2400,
+    "height": 1571,
+    "credit": "Photo by Grand Canyon National Park, CC BY 2.0",
+    "licence": "CC BY 2.0 — {{cc-by-2.0}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_National_Park_Bright_Angel_Lodge_1007_(7412152968).jpg"
+  },
+  {
+    "escape": "grand-canyon-south-rim",
+    "stop": "Desert View Watchtower",
+    "path": "/media/partner/grand-canyon-south-rim/desert-view-watchtower.jpg",
+    "width": 1800,
+    "height": 1350,
+    "credit": "NPS photo by Michael Quinn — public domain",
+    "licence": "Public domain — {{PD-USGov-NPS}} (also released CC BY 2.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:Grand-canyon-watchtower-D4325.JPG"
+  },
+  {
+    "escape": "grand-canyon-south-rim",
+    "stop": "Grandview Point",
+    "path": "/media/partner/grand-canyon-south-rim/grandview-point.jpg",
+    "width": 2400,
+    "height": 1000,
+    "credit": "Grand Canyon NPS photo — public domain",
+    "licence": "Public domain — {{PD-USGov-NPS}} (also released CC BY 2.0)",
+    "source": "https://commons.wikimedia.org/wiki/File:View_from_Grandview_Point_(53910533991).jpg"
+  },
+  {
+    "escape": "verde-valley-wine-country",
+    "stop": "Main Street, Old Town Cottonwood",
+    "path": "/media/partner/verde-valley-wine-country/old-town-cottonwood.jpg",
+    "width": 2400,
+    "height": 1600,
+    "credit": "Photo by Scottb211, CC BY 2.0",
+    "licence": "CC BY 2.0 — {{cc-by-2.0}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Old_Town_Cottonwood,_Arizona_(33786884002).jpg"
+  },
+  {
+    "escape": "verde-valley-wine-country",
+    "stop": "Old Town Jerome",
+    "path": "/media/partner/verde-valley-wine-country/old-town-jerome.jpg",
+    "width": 2400,
+    "height": 1262,
+    "credit": "Photo by Mike McBey, CC BY 2.0",
+    "licence": "CC BY 2.0 — {{cc-by-2.0}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Jerome,_Arizona_(45858250834).jpg"
+  },
+  {
+    "escape": "verde-valley-wine-country",
+    "stop": "Montezuma Castle National Monument",
+    "path": "/media/partner/verde-valley-wine-country/montezuma-castle.jpg",
+    "width": 1800,
+    "height": 1200,
+    "credit": "Photo by Xander Ashburn, CC BY 2.0",
+    "licence": "CC BY 2.0 — {{cc-by-2.0}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Montezuma_Castle_National_Monument_(5_of_9)_(48886806923).jpg"
+  },
+  {
+    "escape": "superstitions-apache-trail",
+    "stop": "Lost Dutchman State Park",
+    "path": "/media/partner/superstitions-apache-trail/lost-dutchman-state-park.jpg",
+    "width": 1800,
+    "height": 1200,
+    "credit": "Photo by ksblack99 — Public Domain Mark 1.0",
+    "licence": "Public Domain Mark 1.0 — {{PD-author-FlickrPDM}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Lost_Dutchman_Rock_Formations_(27633017789).jpg"
+  },
+  {
+    "escape": "superstitions-apache-trail",
+    "stop": "Goldfield Ghost Town",
+    "path": "/media/partner/superstitions-apache-trail/goldfield-ghost-town.jpg",
+    "width": 1800,
+    "height": 1200,
+    "credit": "Photo by J Etzel, CC BY 2.0",
+    "licence": "CC BY 2.0 — {{cc-by-2.0}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Goldfield_Ghost_Town_(29016836924).jpg"
+  },
+  {
+    "escape": "superstitions-apache-trail",
+    "stop": "Canyon Lake",
+    "path": "/media/partner/superstitions-apache-trail/canyon-lake.jpg",
+    "width": 1800,
+    "height": 977,
+    "credit": "Photo by ksblack99 — Public Domain Mark 1.0",
+    "licence": "Public Domain Mark 1.0 — {{PD-author-FlickrPDM}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Canyon_Lake_View_(14414705765).jpg"
+  },
+  {
+    "escape": "sedona-verde-valley-overnight",
+    "stop": "Bell Rock and Courthouse Butte",
+    "path": "/media/partner/sedona-verde-valley-overnight/bell-rock.jpg",
+    "width": 2400,
+    "height": 1596,
+    "credit": "Photo by John Philip Green, CC BY 2.0",
+    "licence": "CC BY 2.0 — {{cc-by-2.0}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Bell_Rock,_Sedona_(3368778633).jpg"
+  },
+  {
+    "escape": "sedona-verde-valley-overnight",
+    "stop": "Oak Creek Vista",
+    "path": "/media/partner/sedona-verde-valley-overnight/oak-creek-vista.jpg",
+    "width": 1800,
+    "height": 1073,
+    "credit": "U.S. Department of Agriculture photo — public domain",
+    "licence": "Public domain — {{PD-USGov-USDA}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Coconino_National_Forest_-_Oak_Creek_Vista_(20181205-OSEC-LSC-0240).jpg"
+  },
+  {
+    "escape": "sedona-verde-valley-overnight",
+    "stop": "Jerome State Historic Park and Audrey Headframe Park",
+    "path": "/media/partner/sedona-verde-valley-overnight/audrey-headframe-park.jpg",
+    "width": 2400,
+    "height": 1800,
+    "credit": "Photo by SidewaysSarah, CC BY 2.0",
+    "licence": "CC BY 2.0 — {{cc-by-2.0}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Audrey_Shaft_Headframe_Park.jpg"
+  },
+  {
+    "escape": "superstitions-apache-trail",
+    "stop": "Superstition Mountains",
+    "path": "/media/partner/superstitions-apache-trail/superstition-mountains.jpg",
+    "width": 2400,
+    "height": 1358,
+    "credit": "Photo by Eden Aviv (CC0)",
+    "licence": "CC0 — {{self|cc-zero}}",
+    "source": "https://commons.wikimedia.org/wiki/File:Superstition_Mountains_in_Apache_Junction.jpg"
+  }
+]

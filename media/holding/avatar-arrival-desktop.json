@@ -1,0 +1,117 @@
+{
+  "variant": "desktop",
+  "targetPath": "public/media/holding/avatar-arrival-desktop-360.webp",
+  "note": "Desktop-only variant. Identical to the mobile arrival clip EXCEPT the point beat: he now points DIAGONALLY UP-AND-LEFT (~45 deg) with his right hand instead of straight up, because on desktop the contact card is docked bottom-right and the countdown timer sits up and to the left of him. Timing is byte-for-byte compatible with avatar-arrival.json - no page-code changes required.",
+
+  "duration": 15.92,
+  "walkInEnds": 2.37,
+  "footsteps": [0.32, 1.03, 1.66],
+  "bubbleAt": 9.3, "bubbleFor": 2.4,
+  "sitAt": 15.35,
+
+  "_notes": {
+    "fps": 14,
+    "loop": "plays once (WebP loop count 1), holds the final seated frame",
+    "frames": 223,
+    "sizes": { "240": [240, 414], "360": [360, 622] },
+    "anchor": "unchanged from the mobile clip - same crop (crop=716:1238:0:6), same scale, same bottom-edge foot anchor",
+    "seatedGeometryAt240": {
+      "headTopY": 80,
+      "hipSeatLineY": 258,
+      "lowestPixelY": 388,
+      "note": "unchanged - the final seated WebP still frame is byte-identical to the mobile one (md5 6baee123a3adea4a1857604785f16017)"
+    },
+    "bubbleSpace": "unchanged - the wave beat is pixel-identical to the mobile clip",
+    "beats": {
+      "walkIn": [0.0, 2.37],
+      "wave": [3.03, 5.2],
+      "gestureAtBar": [5.35, 6.3],
+      "bored": [6.6, 8.2],
+      "boredAndWatch": [6.6, 9.15],
+      "pointDiagonalUpLeftAtCountdown": [9.23, 10.1],
+      "flute": [11.05, 13.75],
+      "sitDown": [13.85, 15.35],
+      "restingSeated": [15.35, 15.92]
+    },
+    "beatTimingDeltaVsMobile": "none - every beat key in avatar-arrival.json keeps the same value; only the key NAME pointUpAtCountdown was renamed to pointDiagonalUpLeftAtCountdown for clarity. Consumers reading the old key should keep reading avatar-arrival.json."
+  },
+
+  "_replacement": {
+    "replacedBeat": "point at the countdown timer",
+    "oldAction": "right arm raised straight up above his head, index finger up",
+    "newAction": "right arm raised to a ~45 deg diagonal toward the UPPER-LEFT of frame, index finger extended along that diagonal, head turned up-left, hopeful smile; hand stays fully inside frame with clear green all around it",
+    "replacedWebpFrames": { "firstIndex0": 123, "lastIndex0": 148, "count": 26, "of": 223 },
+    "replacedWebpSeconds": [8.786, 10.571],
+    "replacedMasterFrames24fps": { "first1Based": 212, "last1Based": 256, "count": 45, "of": 382 },
+    "replacedMasterSeconds": [8.792, 10.625],
+    "identicalFrames": "337 of 382 master frames (24 fps) are pixel-identical to the mobile master; verified by framewise PSNR (psnr_avg = inf outside the replaced range)",
+    "splice": "b2 in the assembly graph changed from [1:v]trim=3.9:5.8 (B4.mp4) to [3:v]trim=3.75:5.65 (the new clip). b1 (bored + wristwatch) still comes from the original B4.mp4, so the bored and watch beats are unchanged. The 0.25 s crossfade at master 8.75-9.00 now blends two static watch-held frames, matching the mobile clip's dissolve quality."
+  },
+
+  "_generation": {
+    "provider": "Higgsfield",
+    "model": "kling3_0",
+    "duration": 6,
+    "aspectRatio": "9:16",
+    "size": [720, 1280],
+    "mode": "std",
+    "cfgScale": 0.5,
+    "sound": "off",
+    "enhancePrompt": false,
+    "startImage": "1833a31f-b3f4-4052-aa7c-35a3bba72ab7",
+    "endImage": "1833a31f-b3f4-4052-aa7c-35a3bba72ab7",
+    "candidates": [
+      { "id": "2375eafc-db92-492b-bb5c-b8fcaae65901", "file": "candidate-A-2375eafc.mp4", "verdict": "CHOSEN - clean ~45 deg diagonal, flat green, no camera drift, right hand, hand fully in frame" },
+      { "id": "750a6f82-c1a0-4440-8073-de3d610bee86", "file": "candidate-B-750a6f82.mp4", "verdict": "rejected - arm angle too steep (~65-70 deg, reads as straight up), plus a heavier green smudge artifact on the lowering hand" }
+    ],
+    "supersedes": "9d3b7ab8-8e40-43d3-99ec-12f7c08a346a (the mobile clip's straight-up point take, delivered as B4.mp4)",
+    "creditsSpent": 24,
+    "beat3Prompt": "his whole face brightens and he turns his head to look up toward the UPPER LEFT CORNER of the picture, and he raises his RIGHT arm and points DIAGONALLY UP AND TO THE LEFT of the frame at about forty-five degrees, his index finger extended straight along that diagonal toward the upper left, elbow bent and lifted out from his body, holding the point steadily for a long clear beat with a hopeful smile. The point is unmistakably diagonal, halfway between straight up and straight out sideways - never straight up above his head and never level with his shoulder. His whole pointing hand, index finger and fingertips stay FULLY INSIDE the picture with a clear band of empty flat green all around them, above them and to their left; the hand never touches, clips or crosses the top edge or the left edge of the frame."
+  },
+
+  "_knownIssues": [
+    "At ~10.35 s a small yellow-green keying residue appears on the lowering hand. This artifact is PRE-EXISTING and present at the identical timestamp in the shipped mobile clip (see beat-mobile-composited.png vs beat-desktop-composited.png) - it is not a regression from this splice.",
+    "The RAISED arm reads noticeably redder than the rest of the figure during the point beat. Audited (see _colourAudit): this is a property of the Higgsfield source render, not the key, and the shipped mobile clip has it slightly WORSE. Evidence: arm-colour-evidence.png."
+  ],
+
+  "_colourAudit": {
+    "question": "Is the red raised arm a despill overcorrection introduced on the new segment?",
+    "answer": "No. The key is applied ONCE to the fully assembled stream ([m]%KEY%[out]), so per-segment despill parameters cannot differ by construction. Measurement confirms it.",
+    "method": "Identical pixel set (opaque skin mask over the whole raised arm) sampled in the keyed master and in the raw green source at the matching frame, so the numbers isolate what the chromakey+despill pass actually does.",
+    "keyPassEffectOnArmSkin": {
+      "mobileRaisedArm":  { "greenSource": [174.4, 87.3, 66.1], "keyed": [178.8, 85.3, 68.4], "deltaPct": [2.5, -2.3, 3.5], "n": 21425 },
+      "desktopRaisedArm": { "greenSource": [184.0, 96.6, 79.3], "keyed": [184.8, 89.3, 76.0], "deltaPct": [0.5, -7.6, -4.2], "n": 17775 },
+      "verdict": "The key shifts arm skin by at most 2.5 / 7.6 / 4.2 percent per channel - inside the 10 percent tolerance on both segments. The arm is already red in the green source (G and B roughly 30 percent below normal skin) before any keying."
+    },
+    "armSkinMeanRGB": {
+      "mobilePointArm":  [178.8, 85.3, 68.4],
+      "desktopPointArm": [184.8, 89.3, 76.0],
+      "waveArmSharedReference": [188.2, 123.0, 100.0],
+      "mobileLoweredArmSameFrame":  [192.2, 122.2, 98.7],
+      "desktopLoweredArmSameFrame": [191.8, 122.0, 97.4]
+    },
+    "comparisons": {
+      "desktopPointArm_vs_mobilePointArm": { "deltaPct": [3.4, 4.7, 11.2], "note": "the desktop arm is slightly BRIGHTER and LESS saturated than the shipped mobile arm - the deviation is away from red, not toward it" },
+      "mobilePointArm_vs_waveArm":  { "deltaPct": [-5.0, -30.6, -31.6] },
+      "desktopPointArm_vs_waveArm": { "deltaPct": [-1.8, -27.4, -24.0], "note": "both clips miss the wave-beat reference by a similar margin; the desktop misses it by less on every channel" }
+    },
+    "previewEncodeCheck": "The 540-wide x264 preview reproduces the master arm colour within about 2 percent (mobile 175.7/84.3/68.2, desktop 183.8/88.7/77.2), so the contact sheet is not exaggerating the redness.",
+    "whyItLooksWorseThanTheGreenRows": "Against saturated green the arm reads neutral by simultaneous contrast; against the dark page background the same pixels read red. The green rows and the keyed rows carry essentially the same arm RGB.",
+    "ifTheTeamWantsItNeutralised": "It is a source-render property affecting BOTH clips, so it must be graded in both or the two breakpoints will not match. Measured multipliers to bring the point-beat arm onto the wave-beat reference: R x1.02, G x1.38, B x1.32, applied selectively to red-dominant skin pixels. NOT applied here, because the brief requires parity with the shipped mobile master.",
+    "rebuildRequired": false,
+    "filesUnchanged": "No re-key or rebuild was warranted, so avatar-arrival-desktop-360.webp (5,823,536 B), -240.webp (3,495,942 B), avatar-sit-desktop-360.webp (30,560 B) and choreo-preview-desktop.mp4 (763,921 B) are unchanged from the first build."
+  },
+
+  "_build": {
+    "host": "Windows PC over ssh alias pc, C:\\work\\choreo-desktop",
+    "script": "rebuild-desktop.bat",
+    "sources": ["A6.mp4", "B4.mp4", "C2.mp4", "candidate-A-2375eafc.mp4 (as D1.mp4)"],
+    "key": "chromakey=0x06F205:0.30:0.10, despill green mix 0.5, alpha lut clip((val-40)*2,0,255) - identical to the mobile build",
+    "outputs": {
+      "avatar-arrival-desktop-360.webp": { "bytes": 5823536, "size": [360, 622], "frames": 223, "loop": 1 },
+      "avatar-arrival-desktop-240.webp": { "bytes": 3495942, "size": [240, 414], "frames": 223, "loop": 1 },
+      "avatar-sit-desktop-360.webp": { "bytes": 30560, "note": "byte-identical to the mobile avatar-sit-360.webp" },
+      "choreo-preview-desktop.mp4": { "bytes": 763921, "note": "540x934 preview composited over the page background #05060b" }
+    }
+  }
+}

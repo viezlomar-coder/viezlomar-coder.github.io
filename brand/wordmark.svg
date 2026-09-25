@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212.72 46.52" width="2400" height="525" role="img" aria-label="Scottsdale Sprinters">
+  <title>Scottsdale Sprinters</title>
+  <!--
+    Vector cut of the holding-page wordmark (src/components/coming-soon/EtherealWordmark.tsx).
+    The component is pure type + CSS, so the lockup is reproduced here as live text:
+    Montserrat 600 / 12u with 3.6u tracking over Montserrat 800 / 36u, geometry measured
+    from the rendered component. The chrome is approximated with a vertical metal ramp.
+    Montserrat must be available (Google Fonts) — as an <img> src the fallback stack is used,
+    so prefer the PNGs when the exact face matters.
+  -->
+  <defs>
+    <linearGradient id="ssChrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="16%" stop-color="#EEF1F6"/>
+      <stop offset="40%" stop-color="#C7CCD5"/>
+      <stop offset="52%" stop-color="#A8B0BC"/>
+      <stop offset="70%" stop-color="#DFE3EA"/>
+      <stop offset="100%" stop-color="#8E96A3"/>
+    </linearGradient>
+    <linearGradient id="ssBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9CA3AF"/>
+      <stop offset="50%" stop-color="#E5E7EB"/>
+      <stop offset="100%" stop-color="#9CA3AF"/>
+    </linearGradient>
+    <filter id="ssEtch" x="-15%" y="-25%" width="130%" height="160%">
+      <feDropShadow dx="0" dy="0.35" stdDeviation="0.45" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+    <style>
+      .ss-type {
+        font-family: Montserrat, Inter, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        fill: url(#ssChrome);
+      }
+    </style>
+  </defs>
+  <g filter="url(#ssEtch)">
+    <text class="ss-type" x="0" y="10.3" font-size="12" font-weight="600" letter-spacing="3.6">SCOTTSDALE</text>
+    <rect x="125.78" y="2.5" width="86.94" height="7" fill="url(#ssBar)"/>
+    <text class="ss-type" x="0" y="44.67" font-size="36" font-weight="800" letter-spacing="-0.18">SPRINTERS</text>
+  </g>
+</svg>

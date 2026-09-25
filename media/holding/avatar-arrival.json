@@ -1,0 +1,33 @@
+{
+  "duration": 15.92,
+  "walkInEnds": 2.37,
+  "footsteps": [0.32, 1.03, 1.66],
+  "bubbleAt": 9.3, "bubbleFor": 2.4,
+  "sitAt": 15.35,
+
+  "_notes": {
+    "fps": 14,
+    "loop": "plays once (WebP loop count 1), holds the final seated frame",
+    "frames": 223,
+    "sizes": { "240": [240, 414], "360": [360, 622] },
+    "anchor": "same crop for the animation and the sit still; the LOWEST pixel of the whole animation (his shoes while standing) sits on the frame's bottom edge",
+    "seatedGeometryAt240": {
+      "headTopY": 80,
+      "hipSeatLineY": 258,
+      "lowestPixelY": 388,
+      "note": "when seated his shoes stop 26px above the frame bottom (240-wide frame); hipSeatLineY is where his weight rests, i.e. align that row with the top edge of the contact bar"
+    },
+    "bubbleSpace": "at bubbleAt the wave hand is held on the LEFT of his head; the green right of his head/shoulder is clear from x=440 of 716 outward (275px, ~38% of the width), so a speech bubble can sit against his right cheek without overlapping him",
+    "beats": {
+      "walkIn": [0.0, 2.37],
+      "wave": [3.03, 5.2],
+      "gestureAtBar": [5.35, 6.3],
+      "bored": [6.6, 8.2],
+      "boredAndWatch": [6.6, 9.15],
+      "pointUpAtCountdown": [9.23, 10.1],
+      "flute": [11.05, 13.75],
+      "sitDown": [13.85, 15.35],
+      "restingSeated": [15.35, 15.92]
+    }
+  }
+}
