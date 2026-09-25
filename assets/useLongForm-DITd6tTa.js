@@ -1,0 +1,1 @@
+import{bt as f,r as n,bu as d}from"./index-K8KGO8Sp.js";function L(t){const r=t.every(f),[,u]=n.useState(0),[s,a]=n.useState(null),c=t.join(",");if(n.useEffect(()=>{if(r)return;let e=!0;return d(t).then(()=>{e&&u(o=>o+1)},o=>{e&&a(()=>o)}),()=>{e=!1}},[c,r]),s&&!r)throw s;return r}export{L as u};
